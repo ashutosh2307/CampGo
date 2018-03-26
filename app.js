@@ -19,7 +19,8 @@ var seedDB = require("./seeds.js");
 // seedDB();
 
 app.use(bodyParser.urlencoded({extended:true}));
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/campgo");
+mongoose.connect("mongodb://naruto:naruto@ds123919.mlab.com:23919/campgo");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
